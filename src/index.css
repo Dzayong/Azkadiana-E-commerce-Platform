@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-display: "Montserrat", sans-serif;
+
+  --color-brand-beige: #F5F5DC;
+  --color-brand-rose: #B48484; /* Updated to match design HTML exactly */
+  --color-brand-green: #047857; /* Emerald Green */
+  --color-brand-tan: #DCAE96; /* Tan color from design HTML */
+  --color-brand-dark: #1A1A1A;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-beige text-brand-dark font-sans select-none;
+  }
+  h1, h2, h3, h4, .serif {
+    @apply font-serif;
+  }
+}
+
+.glass-sidebar {
+  @apply bg-white/40 backdrop-blur-sm border-r border-brand-tan/30;
+}
+
+.glass-card {
+  @apply bg-white/60 backdrop-blur-md border border-brand-tan/20 rounded-3xl shadow-sm;
+}
+
+.label-micro {
+  @apply text-[10px] uppercase tracking-[0.2em] text-brand-rose font-bold;
+}
+
+.btn-primary {
+  @apply bg-brand-green text-white px-8 py-3 rounded-full font-bold uppercase tracking-widest text-xs shadow-lg shadow-brand-green/20 transition-all hover:bg-brand-green/90 hover:scale-105 active:scale-95;
+}
+
+.btn-outline {
+  @apply border border-brand-green text-brand-green px-6 py-2 rounded-xl text-[10px] font-bold uppercase tracking-widest transition-all hover:bg-brand-green hover:text-white;
+}
+
+.input-editorial {
+  @apply w-full text-[10px] bg-transparent border-b border-brand-rose/40 py-1 outline-none focus:border-brand-green transition-colors;
+}
