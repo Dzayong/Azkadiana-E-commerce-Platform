@@ -93,7 +93,7 @@ const Sidebar = ({ role, setRole, activeTab, setActiveTab }: { role: Role, setRo
   return (
     <div className="w-64 glass-sidebar h-screen flex flex-col hidden md:flex sticky top-0 px-8 py-10">
       <div className="mb-12">
-        <h1 className="text-2xl font-bold tracking-[0.2em] text-brand-green uppercase">Azkadiana</h1>
+        <h1 className="text-2xl font-bold tracking-[0.2em] text-brand-green uppercase">Azkadiena</h1>
         <p className="text-[10px] uppercase tracking-widest text-brand-rose mt-1">Premium Modest Wear</p>
       </div>
       
@@ -164,7 +164,7 @@ const RoleSwitcher = ({ currentRole, setRole }: { currentRole: Role, setRole: (r
 const LandingPage = ({ onStart }: { onStart: () => void }) => (
   <div className="relative h-screen flex items-center px-12 md:px-20 overflow-hidden bg-brand-beige">
     <div className="absolute inset-0 z-0">
-      <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=2000&auto=format&fit=crop" alt="Hero bg" className="w-full h-full object-cover opacity-30" />
+      <img src="https://unsplash.com/id/foto/seorang-wanita-mengenakan-jilbab-dan-membawa-dompet-merah-muda-N3sCIJa6_yI?q=80&w=2000&auto=format&fit=crop" alt="Hero bg" className="w-full h-full object-cover opacity-30" />
       <div className="absolute inset-0 bg-gradient-to-r from-brand-beige to-transparent"></div>
     </div>
     
@@ -173,11 +173,11 @@ const LandingPage = ({ onStart }: { onStart: () => void }) => (
       animate={{ opacity: 1, x: 0 }}
       className="relative z-10 max-w-2xl"
     >
-      <span className="text-brand-rose uppercase tracking-[0.3em] text-xs font-bold">Collection 2024</span>
-      <h1 className="text-6xl md:text-8xl text-brand-green leading-tight mt-4 mb-10">
-        Timeless <br />
-        <span className="italic font-light text-brand-dark">Elegance in Modesty</span>
-      </h1>
+      <span className="text-brand-rose uppercase tracking-[0.3em] text-xs font-bold">AZKADIANA COLLECTION</span>
+    <h1 className="text-6xl md:text-8xl text-brand-green leading-tight mt-4 mb-10">
+      Keanggunan <br />
+      <span className="italic font-light text-brand-dark">dalam Kesederhanaan</span>
+    </h1>
       <button onClick={onStart} className="btn-primary">
         Mulai Belanja
       </button>
@@ -264,7 +264,7 @@ const ShopPage = () => {
                 <User className="text-brand-green" size={32} />
               </div>
               <h3 className="text-3xl font-serif text-brand-green mb-3">Member Exclusive</h3>
-              <p className="text-sm text-brand-rose mb-10 leading-relaxed font-medium">Bergabunglah dengan komunitas Azkadiana untuk akses koleksi eksklusif.</p>
+              <p className="text-sm text-brand-rose mb-10 leading-relaxed font-medium">Bergabunglah dengan komunitas Azkadiena untuk akses koleksi eksklusif.</p>
               <div className="space-y-4">
                 <button 
                   onClick={() => {
@@ -527,7 +527,7 @@ const OwnerView = () => {
     <div className="p-8">
        <div className="mb-12">
           <h2 className="text-4xl text-brand-green">Business Essence</h2>
-          <p className="text-brand-rose italic mt-2">Deep analytics of the Azkadiana lifecycle</p>
+          <p className="text-brand-rose italic mt-2">Deep analytics of the Azkadiena lifecycle</p>
        </div>
 
        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
@@ -621,7 +621,7 @@ export default function App() {
         {/* Top Navbar for Customers */}
         {role === 'Customer' && isStarted && (
           <header className="px-8 py-6 flex items-center justify-between bg-white/20 backdrop-blur-md sticky top-0 z-40">
-             <h1 className="text-2xl font-serif text-brand-green font-bold tracking-widest">AZKADIANA</h1>
+             <h1 className="text-2xl font-serif text-brand-green font-bold tracking-widest">AZKAdiena</h1>
              <div className="flex items-center space-x-6">
                 <button onClick={() => setActiveTab('shop')} className={`text-sm font-bold uppercase tracking-widest ${activeTab === 'shop' ? 'text-brand-green border-b-2 border-brand-green' : 'text-gray-400'}`}>Shop</button>
                 <button onClick={() => setActiveTab('profile')} className={`text-sm font-bold uppercase tracking-widest ${activeTab === 'profile' ? 'text-brand-green border-b-2 border-brand-green' : 'text-gray-400'}`}>Profile</button>
@@ -649,7 +649,7 @@ export default function App() {
            <footer className="bg-brand-dark text-white p-12 mt-20">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
                 <div className="space-y-6">
-                   <h2 className="text-3xl font-serif tracking-widest">AZKADIANA</h2>
+                   <h2 className="text-3xl font-serif tracking-widest">AZKAdiena</h2>
                    <p className="text-gray-400 text-sm leading-relaxed">
                      Pakaian Modest Premium untuk wanita yang menghargai keanggunan, kualitas, dan detail yang tak lekang oleh waktu.
                    </p>
@@ -661,7 +661,7 @@ export default function App() {
                       <Phone size={16} /> <span>+62 812 3456 7890</span>
                     </div>
                     <div className="flex items-center space-x-3 text-gray-400 text-sm">
-                      <Mail size={16} /> <span>hello@azkadiana.com</span>
+                      <Mail size={16} /> <span>hello@azkadiena.com</span>
                     </div>
                     <div className="flex items-center space-x-3 text-gray-400 text-sm">
                       <MapPin size={16} /> <span>Jakarta, Indonesia</span>
@@ -677,7 +677,7 @@ export default function App() {
                 </div>
               </div>
               <div className="mt-12 pt-12 border-t border-white/10 text-center text-xs text-gray-500 tracking-widest">
-                &copy; 2024 AZKADIANA PREMIUM MODEST WEAR. ALL RIGHTS RESERVED.
+                &copy; 2024 AZKAdiena PREMIUM MODEST WEAR. ALL RIGHTS RESERVED.
               </div>
            </footer>
         )}
